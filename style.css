@@ -3,3 +3,50 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: 'Lexend Deca';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width: 90%;
+}
+
+.card{
+    padding: 3rem;
+}
+
+.card__title{
+    margin: 2rem 0;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display';
+    color: hsl(0, 0%, 95%);
+}
+
+.card__link{
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 2rem;
+    text-transform: capitalize;
+}
+
+.card--orange{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.card--blue{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card--darkgreen{
+    background-color: hsl(179, 100%, 13%);
+}
+
+.card__content{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
