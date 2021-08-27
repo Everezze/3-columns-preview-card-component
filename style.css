@@ -9,10 +9,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 section{
     width: 90%;
+    /* max-width: 1000px; NO NEED TO SET A MAX-WIDTH AS THE WIDTH WILL BE INTRINSIC */
 }
 
 .card{
@@ -24,6 +26,7 @@ section{
     text-transform: uppercase;
     font-family: 'Big Shoulders Display';
     color: hsl(0, 0%, 95%);
+    font-size: 2.5rem;
 }
 
 .card__link{
@@ -32,6 +35,7 @@ section{
     background-color: hsl(0, 0%, 95%);
     border-radius: 2rem;
     text-transform: capitalize;
+    display: inline-block;
 }
 
 .card--orange{
@@ -48,5 +52,49 @@ section{
 
 .card__content{
     color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 2rem;
+    line-height: 1.7;
+    text-transform: capitalize;
 }
 
+.card__link--blue{
+    color: hsl(184, 100%, 22%);
+}
+
+.card__link--orange{
+    color: hsl(31, 77%, 52%);
+}
+
+.card__link--darkgreen{
+    color: hsl(179, 100%, 13%);
+}
+
+.card__link:hover{
+    /* border: 2px solid hsl(0, 0%, 95%); */
+    outline: hsl(0, 0%, 95%) solid 2px;
+    color: hsl(0, 0%, 95%);
+}
+
+.card__link--blue:hover{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card__link--orange:hover{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.card__link--darkgreen:hover{
+    background-color: hsl(179, 100%, 13%);
+}
+
+@media screen and (min-width:769px) {
+    section{
+        display: flex;
+        width: auto;
+    }
+
+    .card__content{
+        max-width: 220px;
+        margin-bottom: 7rem;
+    }
+}
