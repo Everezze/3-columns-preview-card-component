@@ -15,6 +15,8 @@ body{
 section{
     width: 90%;
     /* max-width: 1000px; NO NEED TO SET A MAX-WIDTH AS THE WIDTH WILL BE INTRINSIC */
+    border-radius: .5rem;
+    overflow: hidden;
 }
 
 .card{
